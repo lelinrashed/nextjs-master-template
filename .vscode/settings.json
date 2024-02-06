@@ -1,0 +1,27 @@
+{
+	"css.lint.importStatement": "warning",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.fixAll.eslint": "explicit"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.suggestSelection": "first",
+	"emmet.includeLanguages": {
+		"postcss": "css"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"files.autoSave": "onFocusChange",
+	"git.branchProtection": ["main"],
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false
+	},
+	"typescript.updateImportsOnFileMove.enabled": "prompt",
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

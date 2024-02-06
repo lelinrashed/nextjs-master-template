@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"wix.vscode-import-cost",
+		"vunguyentuan.vscode-postcss",
+		"dbaeumer.vscode-eslint",
+		"bradlc.vscode-tailwindcss",
+		"aaron-bond.better-comments"
+	]
+}
