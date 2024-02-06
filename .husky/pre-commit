@@ -1,5 +1,4 @@
 branch=$(git rev-parse --abbrev-ref HEAD)
-echo "Branch: $branch"
 
 if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
     echo "Direct push to $branch is not allowed!"
