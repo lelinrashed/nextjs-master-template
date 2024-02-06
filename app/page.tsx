@@ -11,6 +11,7 @@ const nunito = Nunito({
 });
 
 export default function Home() {
+	throw new Error("This is a test error");
 	return (
 		<main className="max-w-7xl px-3 mx-auto min-h-svh grid place-content-center gap-6 md:gap-10">
 			<NavigationMenuDemo />
