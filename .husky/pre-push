@@ -1,0 +1,6 @@
+npm run lint
+
+if [ $? -ne 0 ]; then
+  echo "\033[1;31mLint failed!\033[0m Please fix the issues and try again."
+  exit 1
+fi
