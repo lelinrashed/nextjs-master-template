@@ -1,13 +1,7 @@
 branch=$(git rev-parse --abbrev-ref HEAD)
 echo "Branch: $branch"
 
-# if [ "$branch" = "feature/setup" ] || [ "$branch" = "master" ]; then
-#     read -p "You are about to commit to the $branch branch. Are you sure? (y/n): " -n 1 -r answer
-
-#     if [[ $answer != "y" ]]; then
-#         echo "Aborting commit"
-#         exit 1
-#     else
-#         echo "Committing to $branch branch"
-#     fi
-# fi
+if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+    echo "Direct push to $branch is not allowed!"
+    exit 1
+fi
