@@ -1,11 +1,11 @@
 branch=$(git rev-parse --abbrev-ref HEAD)
 
-if [ "$branch" = "main"] || [ "$branch" = "master" ]; then
-    read -p "You are about to commit to the $branch branch. Are you sure? (y/n): " answer -n 1 -r
+if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+    read -p "You are about to commit to the $branch branch. Are you sure? (y/n): " -n 1 -r answer
     if [[ -z $answer ]]; then
         answer="n"
     fi
-    
+
     if [[ $answer != "y" ]]; then
         echo "Aborting commit"
         exit 1
