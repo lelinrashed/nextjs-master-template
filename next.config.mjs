@@ -1,3 +1,9 @@
+import bunldeAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = bunldeAnalyzer({
+	enabled: process.env.ANALYZE === "true",
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	compress: false, // To handle compression in the reverse proxy (nginx)
@@ -17,4 +23,4 @@ const nextConfig = {
 	poweredByHeader: process.env.NODE_ENV !== "production",
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);
