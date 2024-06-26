@@ -37,9 +37,7 @@ export default function LoginPage() {
 			title: "Account created",
 			description: "We've created successfully! 🎉",
 			variant: "default",
-			action: (
-				<ToastAction altText="View Account">View account</ToastAction>
-			),
+			action: <ToastAction altText="View Account">View account</ToastAction>,
 		});
 	};
 
@@ -95,11 +93,7 @@ export default function LoginPage() {
 					</div>
 				</CardContent>
 				<CardFooter>
-					<Button
-						className="w-full"
-						type="submit"
-						onClick={handleSubmit(onSubmit)}
-					>
+					<Button className="w-full" type="submit" onClick={handleSubmit(onSubmit)}>
 						Sign in
 					</Button>
 				</CardFooter>

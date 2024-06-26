@@ -12,12 +12,12 @@ const nunito = Nunito({
 
 export default function Home() {
 	return (
-		<div className="min-h-svh flex flex-col">
+		<div className="flex min-h-svh flex-col">
 			<Navbar />
-			<div className="max-w-7xl flex-grow px-3 mx-auto grid place-content-center gap-6 md:gap-10">
+			<div className="mx-auto grid max-w-7xl flex-grow place-content-center gap-6 px-3 md:gap-10">
 				<h1
 					className={cn(
-						"text-4xl md:text-8xl max-w-5xl font-semibold capitalize tracking-wide text-center text-balance",
+						"max-w-5xl text-balance text-center text-4xl font-semibold capitalize tracking-wide md:text-8xl",
 						nunito.className
 					)}
 				>
