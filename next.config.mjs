@@ -9,8 +9,7 @@ const nextConfig = {
 	compress: false, // To handle compression in the reverse proxy (nginx)
 	images: {
 		contentDispositionType: "attachment",
-		contentSecurityPolicy:
-			"default-src 'self'; script-src 'none'; sandbox;",
+		contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
 		remotePatterns: [],
 		minimumCacheTTL: 60,
 	},

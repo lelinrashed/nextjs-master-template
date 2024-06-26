@@ -4,7 +4,7 @@ import { Separator } from "../ui/separator";
 
 export default function Navbar() {
 	return (
-		<div className="flex sticky inset-0 top-0 justify-between items-center h-16 bg-white shadow-md px-3 md:px-6">
+		<div className="sticky inset-0 top-0 flex h-16 items-center justify-between bg-white px-3 shadow-md md:px-6">
 			<div className="flex items-center space-x-4">
 				<Link href="/">
 					<Icons.npm className="size-9" />

@@ -2,11 +2,7 @@ type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
 	logo: (props: IconProps) => (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 256 256"
-			{...props}
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
 			<rect width="256" height="256" fill="none" />
 			<line
 				x1="208"

@@ -37,9 +37,7 @@ export default function SignupPage() {
 			title: "Account created",
 			description: "We've created successfully! 🎉",
 			variant: "default",
-			action: (
-				<ToastAction altText="View Account">View account</ToastAction>
-			),
+			action: <ToastAction altText="View Account">View account</ToastAction>,
 		});
 	};
 
@@ -47,12 +45,8 @@ export default function SignupPage() {
 		<div>
 			<Card>
 				<CardHeader className="space-y-1">
-					<CardTitle className="text-2xl">
-						Create an account
-					</CardTitle>
-					<CardDescription>
-						Enter your email below to create your account
-					</CardDescription>
+					<CardTitle className="text-2xl">Create an account</CardTitle>
+					<CardDescription>Enter your email below to create your account</CardDescription>
 				</CardHeader>
 				<CardContent className="grid gap-4">
 					<div className="grid grid-cols-2 gap-6">
@@ -97,11 +91,7 @@ export default function SignupPage() {
 					</div>
 				</CardContent>
 				<CardFooter>
-					<Button
-						className="w-full"
-						type="submit"
-						onClick={handleSubmit(onSubmit)}
-					>
+					<Button className="w-full" type="submit" onClick={handleSubmit(onSubmit)}>
 						Create account
 					</Button>
 				</CardFooter>

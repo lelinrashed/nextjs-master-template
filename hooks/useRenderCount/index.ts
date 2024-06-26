@@ -13,7 +13,7 @@ export const useRenderCounter = (): void => {
 	process.env.NODE_ENV === "development"
 		? console.log(
 				`[${componentName.current}] Component has rendered ${renderCount.current} times.`
-		  )
+			)
 		: null;
 
 	renderCount.current++;
